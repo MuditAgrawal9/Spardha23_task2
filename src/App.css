@@ -1,38 +1,76 @@
-.App {
+/* Updated styles for vertical sidebar layout */
+.app {
+  background-color: rgb(89, 169, 169);
+}
+.heading{
   text-align: center;
+  background-color: #6076d1;
+  margin-bottom: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  margin-bottom: 0px;
+  line-height: 1.6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display{
+  display: flex;
+  margin-top: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 70px;
+  background-color: #6076d1;
+  color: rgb(250, 240, 240); /* Text color */
+  padding: 20px; /* Add some padding to the items */
+  margin: 0%;
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  align-items: center; /* Align items to the start (left) of the sidebar */
+}
+
+.sidebar-item {
+  padding: 10px 0; /* Add spacing between items */
+  cursor: pointer;
+}
+
+/* CSS for controlling the size of the images */
+.sport-icon {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+}
+
+
+.match-display {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 5000px;
 }
 
-.App-link {
-  color: #61dafb;
+.data{
+ 
+ display: flex;
+ flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+ul{
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.table{
+  --bs-table-bg: rgb(89, 169, 169);
+}
+
+th{
+  width: 200px;
 }
